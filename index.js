@@ -49,6 +49,8 @@ app.post('/webhook/', function (req, res) {
       // Handle a text message from this sender
       if(text == "ติน")
       	sendTextMessage(sender, "กนก")
+      else if(text == "babun" || text == "บาบัน")
+      	sendTextMessage(sender, "ตินเอง")
       else
       	sendTextMessage(sender, "หวัดดีครับ")
       console.log(text);
