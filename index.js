@@ -52,27 +52,27 @@ app.post('/webhook/', function (req, res) {
       var number = 0
 
       if(text.indexof("เกม")>-1){
-      	number =1;
+      	number =1
       	flag = true
-      	if(flag == true && number == 1){
+      	if(flag && number == 1){
       		sendTextMessage(sender, "ตุ๊กกี้ กับ โก๊ะตี๋ ใครสูงกว่ากัน (1.ตุ๊กกี้ 2.โก๊ะตี๋)")
       		if(flag && text.indexOf("2")>-1){
       			score++;
-      			number = 2;
+      			number = 2
       		}else {
-      			number =2;
+      			number =2
       		}
       	}
-      	if(flag == true && number == 2){
+      	if(flag && number == 2){
       		sendTextMessage(sender, "ฟุตบอลโลก 2018 ประเทศไหนเป็นเจ้าภาพ (1.บราซิล 2.รัสเซีย๋)")
       		if(flag && text.indexOf("2")>-1){
       			score++;
-      			number = 3;
+      			number = 3
       		}else {
-      			number =3;
+      			number =3
       		}
       	}
-      	if(flag == true && number == 3){
+      	if(flag && number == 3){
       		sendTextMessage(sender, "ไพ่ 1 สำรับ มีอักษรภาษาอังกฤษกี่ตัว")
       		if(flag && text.indexOf("4")>-1){
       			score++;
@@ -81,7 +81,7 @@ app.post('/webhook/', function (req, res) {
       			number =4;
       		}
       	}
-      	if(flag == true && number == 4){
+      	if(flag && number == 4){
       		sendTextMessage(sender, "ใคร เก็บเมาคลีไปเลี้ยง (1.หมาป่า 2.แมวน้ำ๋)")
       		if(flag && text.indexOf("1")>-1){
       			score++;
@@ -90,7 +90,7 @@ app.post('/webhook/', function (req, res) {
       			number =5;
       		}
       	}
-      	if(flag == true && number == 5){
+      	if(flag && number == 5){
       		sendTextMessage(sender, "ลูกเต๋า 6 หน้ามี จุดรวมกันกี่จุด")
       		if(flag && text.indexOf("21")>-1){
       			score++;
