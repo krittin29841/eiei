@@ -47,7 +47,7 @@ app.post('/webhook/', function (req, res) {
     if (event.message && event.message.text) {
       var text = event.message.text;
       // Handle a text message from this sender
-      boolean flag = false
+      boolean flag = 0
       var score = 0
       var number = 0
 
